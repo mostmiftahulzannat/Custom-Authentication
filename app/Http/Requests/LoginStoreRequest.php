@@ -25,7 +25,8 @@ class LoginStoreRequest extends FormRequest
     {
         return [
             'email'=> 'bail|required|string|email|max:255|exists:users,email',
-            'password'=> 'bail|required|string'
+            'password'=> 'bail|required|string',
+            'education'=> 'bail|required|string'
         ];
     }
 }

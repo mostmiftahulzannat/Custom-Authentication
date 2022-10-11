@@ -52,6 +52,18 @@
                                     </span>
                                 @enderror
                             </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Last Educational qualification</label>
+                                <input type="tel" name="education" id=""
+                                    class="form-control @error('education')
+                                 is-invalid
+                              @enderror">
+                                @error('education')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
 
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
